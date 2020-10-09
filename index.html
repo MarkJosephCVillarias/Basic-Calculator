@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="description" content="Basic Calculator">
+    <meta name="keywords" content="Basic Calculator">
+    <meta name="author" content="Mark Joseph Villarias">
+	<link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/reset.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body onload="zoom()">
+    <div class="container">
+        <div class="calculator">
+            <div class="display__answer" id="answer"></div>
+            <div class="display__keys" id="operator">
+                <button class="operator plus" onClick="add()">+</button>
+                <button class="operator minus" onClick="subtract()">-</button>
+                <button class="operator times" onClick="multiply()">&times;</button>
+                <button class="operator divide" onClick="divide()">/</button>
+                <button class="number one" onClick="one()">1</button>
+                <button class="number two" onClick="two()">2</button>
+                <button class="number three" onClick="three()">3</button>
+                <button class="number four" onClick="four()">4</button>
+                <button class="number five" onClick="five()">5</button>
+                <button class="number six" onClick="six()">6</button>
+                <button class="number seven" onClick="seven()">7</button>
+                <button class="number eight" onClick="eight()">8</button>
+                <button class="number nine" onClick="nine()">9</button>
+                <button class="number zero" onClick="zero()">0</button>
+                <button class="number clear" onClick="erase()">C</button>
+                <button class="number decimal" onClick="decimalPoint()">.</button>
+                <button class="equal" onClick="equals()"> = </button>
+            </div>
+        </div>
+    </div>
+    <script src="js/calculation.js"></script>
+</body>
+</html>
